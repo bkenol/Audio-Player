@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> JUKEBOX </title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+		<div id="juke">
+			<audio id="music">
+			  <source src="Music/HoneymoonAvenue.mp3" type="audio/mpeg">
+			</audio>
+
+			<img id="album" src="">
+			
+			<h1 id="title"></h1>
+			
+			<div id="controls">
+				<img id="stopButton" src="stop.png">
+				<img id="prevButton" src="prev.png">
+				<img id="playButton" src="play.png">
+				<img id="nextButton" src="next.png">
+				<img id="shuffleButton" src="shuffle.png">
+			</div>	
+			
+			<input class="slider data-slider-v" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)" type="range" min="1%" max="100%" value="80%" id="slidercontainer">
+			
+			<div id="timeline">
+            	<div id="playhead"></div>
+            </div>
+		</div>
+
+		<div id="queue">
+			<ul id="playlist">
+				<h2>Songs</h2>
+			</ul>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

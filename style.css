@@ -1,0 +1,106 @@
+body{
+	margin-top: 3%;
+	font-family: 'Staatliches', cursive;
+}
+#juke{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5%;
+	width: 50%;
+	display: inline-block;
+}
+#title{
+	text-align: center;
+	font-size: 36px;
+}
+#controls{
+/*	display: block;*/
+	margin-right: auto;
+	margin-left: auto;
+
+	width: 50%;
+}
+#controls img{
+	display: inline;
+	margin-right: auto;
+	margin-left: auto;
+	
+	width: 19%;
+}
+#album{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+}
+#queue{
+	margin-right: auto;
+	margin-left: auto;
+	width: 20%;
+	display: inline-block;
+	font-size: 24px;
+}
+#container{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 75%;
+}
+#queue li{
+	border: 2px solid #1CABE8;
+	border-radius: 10px;
+	padding: 2%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	list-style: none;
+	margin-left: 0%;
+}
+
+.item:hover{
+	opacity: 0.5;
+}
+
+#controls img:hover{
+	opacity: 0.5;
+}
+
+#slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+
+.slider {
+    -webkit-appearance: none; 
+    /*appearance: none;*/
+    margin-top: 1rem;
+    width: 50%; /* Full-width */
+    height: 0.5rem; /* Specified height */
+    background: #E7E4EB; /* Grey background */
+    outline: none; /* Remove outline */
+    border-radius: 15px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4%;
+}
+
+/* The slider handle (use webkit (Chrome, Opera, Safari, Edge) and moz (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    width: 1.5rem; /* Set a specific slider handle width */
+    height: 1.5rem; /* Slider handle height */
+    background: #1CABE8;
+    border-radius: 100%;
+    cursor: pointer; /* Cursor on hover */
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+
+.slider::-webkit-slider-thumb:hover {
+    width: 1.8rem;
+    height: 1.8rem;
+}
